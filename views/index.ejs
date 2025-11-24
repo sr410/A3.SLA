@@ -1,0 +1,33 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+
+<div class="container mt-4">
+    <div class="text-center">
+        <h1 class="mb-3"><%= title %></h1>
+        <p class="lead">Manage your shopping items easily — add, edit, and delete items using a simple interface.</p>
+
+        <a href="/list" class="btn btn-primary btn-lg mt-3">
+            View Shopping List
+        </a>
+    </div>
+</div>
+
+
+<!-- Food pyrmid image -->
+ 
+      <div class="text-center">
+    <img src="Asset/images/food.png" 
+         alt="Food pyrmid"
+         class="img-fluid mb-3"
+         style="max-width: 350px;">
+        </div>
+<!-- Text overlay -->
+    <div class="position-absolute top-70 start-50 translate-middle"
+         style="color: rgb(0, 0, 0); font-size: 1.5rem; font-weight: bold; text-shadow: 2px 2px 5px rgb(0, 0, 0);">
+        Recommended food
+    </div>
+
+<%- include('./partials/footer.ejs') %>
+
+
+
