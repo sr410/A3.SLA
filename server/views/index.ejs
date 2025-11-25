@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+
+<div class="container mt-5">
+  <!--Hero -->
+  <div class="text-center">
+    <h1 class="display-4 mb-3"><%= title %></h1>
+    <p class="lead mb-4">
+      GList makes managing your shopping items effortless  quickly add, edit, or remove items with a simple, intuitive interface.
+    </p>
+    <a href="/Glist" class="btn btn-primary btn-lg">
+      View Your List
+    </a>
+  </div>
+
+  <!--logo-->
+  <div class="text-center mt-5">
+    <img src="/Asset/images/G.png" 
+         alt="GList Logo"
+         class="img-fluid rounded shadow-sm"
+         style="max-width: 300px;">
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>

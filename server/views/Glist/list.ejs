@@ -1,0 +1,59 @@
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/navbar.ejs') %>
+
+<!-- Main content displaying database -->
+<main class="container">
+  <div class="row">
+    <div class="offset-md-1 col-md-10">
+      
+      <!-- Page title and Add button -->
+      <h1><%= title %></h1>
+      <a href="/Glist/add" class="btn btn-primary" role="button">
+        <i class="fas fa-plus-circle"></i> Add
+      </a>
+      <br><br>
+
+      <!-- Table displaying list -->
+      <table class="table table-bordered table-striped table-hover">
+        
+        <!-- Header row -->
+        <tr class="d-flex">
+          <th class="text-center col-2">Item Name</th>
+          <th class="text-center col-2">Category</th>
+          <th class="text-center col-2">Quantity</th>
+          <th class="text-center col-3">Notes</th>
+          <th class="text-center col-1">Price</th>
+          <th class="text-center col-2">Actions</th>
+        </tr>
+
+        <!-- Loop through list -->
+        <% for(let count = 0; count < grList.length; count++) { %>
+          <tr class="d-flex">
+            <td class="text-center col-2"><%= grList[count].name %></td>
+            <td class="text-center col-2"><%= grList[count].category %></td>
+            <td class="text-center col-2"><%= grList[count].quantity %></td>
+            <td class="text-center col-3"><%= grList[count].notes %></td>
+            <td class="text-center col-1"><%= "$" + grList[count].price %></td>
+
+            <!--actions: Edit and Delete buttons-->
+            <td class="text-center col-2">
+              <a href="/Glist/edit/<%= grList[count]._id %>" class="btn btn-primary btn-sm">
+                Edit
+              </a>
+
+              <a href="/Glist/delete/<%= grList[count]._id %>" 
+                class="btn btn-danger btn-sm"
+                onclick="return confirm('Are you sure you want to delete this item?');">
+                Delete
+            </a>
+              
+            </td>
+          </tr>
+        <% } %>
+      </table>
+
+    </div>
+  </div>
+</main>
+
+<%- include('../partials/footer.ejs') %>
