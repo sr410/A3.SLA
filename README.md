@@ -1,28 +1,29 @@
-# A3.SLA
-
-
-Assignment 3
-Project Name
-Shopping List App
+GList
+Name: Sukhmanjeet
+Student Number: 100981591
+INFR3120 – Assignment 3
 Description
-A simple web application that allows users to manage a shopping list. The app will let users create, view, update, and delete items stored in a MongoDB database.
-Features
-Add items to the shopping list
-View all items
-Edit existing items
-Delete items with confirmation
-Store item data using MongoDB and Mongoose
-Use ExpressJS for routing and EJS for templating
-Styled with Bootstrap
+GList is a simple shopping list app that lets users add items, view items, edit items, and delete items. The app uses NodeJS, ExpressJS, MongoDB, Mongoose, and EJS.
+How to Use GList
+GList helps you keep track of the items you need to buy.
+What You Can Do
+Add Items
 
 
-Item Fields
-Each shopping list item includes:
-Name
-Quantity
-Category (optional)
-Notes (optional)
+View Your List
+Edit Items
+Delete Items
 
 
-Purpose
-This project is for Assignment 03 and is designed to demonstrate full CRUD functionality using NodeJS, ExpressJS, MongoDB, and EJS.
+How It Works
+Click on “View G List” in the menu. From there, you can add new items or manage your existing list.
+External Code Used
+Class resources provided during the course
+
+Bootstrap CDN (getbootstrap.com)
+GeeksforGeeks (reference only)
+
+
+Links
+Live Site: 
+GitHub Repo: https://github.com/sr410/A3.SLA.git
